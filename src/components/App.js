@@ -1,5 +1,6 @@
 import JSXComponent from 'metal-jsx';
 import HelloWorld from './HelloWorld';
+import '../css/App.scss';
 
 class App extends JSXComponent {
 	render() {
