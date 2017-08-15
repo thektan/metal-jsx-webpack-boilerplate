@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: './src/components/App.js',
@@ -25,5 +26,13 @@ module.exports = {
 				]
 			}
 		]
-	}
+	},
+	devServer: {
+		contentBase: path.resolve(__dirname, 'dist'),
+		hot: true,
+		port: 9000
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin()
+	]
 };
