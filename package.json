@@ -5,7 +5,8 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webapack --watch"
   },
   "dependencies": {
     "metal-jsx": "^2.13.2"
