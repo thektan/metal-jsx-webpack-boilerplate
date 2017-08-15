@@ -12,4 +12,4 @@ class App extends JSXComponent {
 	}
 }
 
-export const Root = new App({element:  '#app'});
+new App({element:  '#root'});
