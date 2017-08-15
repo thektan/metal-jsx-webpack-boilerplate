@@ -8,3 +8,10 @@ Technologies:
 - webpack
 - babel
 - sass-loader
+
+## Customizations
+
+To remove `sass-loader`, revert commit: [Add sass loader (cd15eda)](https://github.com/thektan/metal-jsx-webpack-boilerplate/commit/cd15eda86aeb14fe1c80b720fca73b406e7af5c4)
+```
+git revert cd15eda86aeb14fe1c80b720fca73b406e7af5c4
+```
