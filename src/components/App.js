@@ -12,4 +12,4 @@ class App extends JSXComponent {
 	}
 }
 
-new App({element:  '#root'});
+new App({element: '#root'});
