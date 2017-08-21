@@ -692,6 +692,10 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap@^3.3.6:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+
 brace-expansion@^1.1.7:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
@@ -1882,6 +1886,10 @@ html-entities@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
 
+html2incdom@^0.1.1:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/html2incdom/-/html2incdom-0.1.8.tgz#7e2145a5a60abb45faa28a4aaf099a3ff28af756"
+
 http-deceiver@^1.2.7:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/http-deceiver/-/http-deceiver-1.2.7.tgz#fa7168944ab9a519d337cb0bec7284dc3e723d87"
@@ -2424,6 +2432,14 @@ merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
 
+metal-ajax@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/metal-ajax/-/metal-ajax-2.1.1.tgz#f715dd98fb38bc2ad2269eb960f3318ff8a4e543"
+  dependencies:
+    metal "^2.0.0"
+    metal-promise "^2.0.0"
+    metal-uri "^2.0.0"
+
 metal-component@^2.13.2:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/metal-component/-/metal-component-2.13.2.tgz#28ee6ec2ee66777123637e9659d443888d57abb6"
@@ -2433,14 +2449,18 @@ metal-component@^2.13.2:
     metal-events "^2.13.2"
     metal-state "^2.13.2"
 
-metal-dom@^2.13.2:
+metal-debounce@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/metal-debounce/-/metal-debounce-2.0.0.tgz#24cf659a8f7884a59ea4319e210734293d94f0ad"
+
+metal-dom@^2.0.0, metal-dom@^2.13.2:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/metal-dom/-/metal-dom-2.13.2.tgz#dacf9738f56769b285bbe04d1c302159a2898c4c"
   dependencies:
     metal "^2.13.2"
     metal-events "^2.13.2"
 
-metal-events@^2.13.2:
+metal-events@^2.0.0, metal-events@^2.13.2:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/metal-events/-/metal-events-2.13.2.tgz#84b1d750a859ae2c38125a7f8ff4f7a80a5034cd"
   dependencies:
@@ -2466,6 +2486,45 @@ metal-jsx@^2.13.2:
     metal-incremental-dom "^2.13.2"
     metal-state "^2.13.2"
 
+metal-path-parser@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/metal-path-parser/-/metal-path-parser-1.0.3.tgz#3d08ac2b56df2d39717c9d64d1ea3ee017ec40f7"
+  dependencies:
+    metal "^2.0.0"
+
+metal-promise@^2.0.0, metal-promise@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/metal-promise/-/metal-promise-2.0.1.tgz#28ff43210e4c69e5fff51dbf201e4ae2fe6f83d5"
+  dependencies:
+    metal "^2.0.0"
+
+metal-router@^3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/metal-router/-/metal-router-3.6.3.tgz#69a2369ace1a198433f9d2072e9644266c7e2e0c"
+  dependencies:
+    metal-promise "^2.0.1"
+    metal-soy "^2.5.18"
+    metal-uri "^2.2.6"
+    senna "^2.3.1"
+
+metal-soy-bundle@^2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/metal-soy-bundle/-/metal-soy-bundle-2.13.2.tgz#4367bd894639ddfb8323892e28c5b6ff184abdb0"
+  dependencies:
+    metal-incremental-dom "^2.13.2"
+
+metal-soy@^2.5.18:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/metal-soy/-/metal-soy-2.13.2.tgz#3ccd5ed5817ace7e5dced1dc048780dd1adac2e2"
+  dependencies:
+    html2incdom "^0.1.1"
+    metal "^2.13.2"
+    metal-component "^2.13.2"
+    metal-dom "^2.13.2"
+    metal-incremental-dom "^2.13.2"
+    metal-soy-bundle "^2.13.2"
+    metal-state "^2.13.2"
+
 metal-state@^2.13.2:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/metal-state/-/metal-state-2.13.2.tgz#2ad07c952a735b96566e74b0f95b20b18b39ceee"
@@ -2473,7 +2532,28 @@ metal-state@^2.13.2:
     metal "^2.13.2"
     metal-events "^2.13.2"
 
-metal@^2.13.2:
+metal-structs@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/metal-structs/-/metal-structs-1.0.1.tgz#548272f718ee9d729e3079b74a3f1254143db75b"
+  dependencies:
+    metal "^2.0.0"
+
+metal-uri@^2.0.0, metal-uri@^2.2.6:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/metal-uri/-/metal-uri-2.3.0.tgz#a9b787e8ef6075d9af3cf0e3e75c12f2cde403de"
+  dependencies:
+    metal "^2.0.0"
+    metal-structs "^1.0.0"
+    path-browserify "0.0.0"
+    url "^0.11.0"
+
+metal-useragent@^2.0.0:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/metal-useragent/-/metal-useragent-2.1.3.tgz#f587dbd613c4d7c9050639f58973127538637169"
+  dependencies:
+    metal "^2.0.0"
+
+metal@^2.0.0, metal@^2.13.2:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/metal/-/metal-2.13.2.tgz#75119cad2c9bb784a0f472a76bf74a6d72d13f7b"
 
@@ -3591,6 +3671,22 @@ send@0.15.4:
     on-finished "~2.3.0"
     range-parser "~1.2.0"
     statuses "~1.3.1"
+
+senna@^2.3.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/senna/-/senna-2.4.1.tgz#f8d539fb08fe1a0a9cad3b338c773e05461d147d"
+  dependencies:
+    bootstrap "^3.3.6"
+    metal "^2.0.0"
+    metal-ajax "^2.1.1"
+    metal-debounce "^2.0.0"
+    metal-dom "^2.0.0"
+    metal-events "^2.0.0"
+    metal-path-parser "^1.0.0"
+    metal-promise "^2.0.0"
+    metal-structs "^1.0.0"
+    metal-uri "^2.2.6"
+    metal-useragent "^2.0.0"
 
 serve-index@^1.7.2:
   version "1.9.0"
