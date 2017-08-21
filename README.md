@@ -2,7 +2,7 @@
 
 A starting point for developing a [Metal](https://metaljs.com/) app using JSX and Webpack. Also includes [Sass Loader](https://github.com/webpack-contrib/sass-loader).
 
-Technologies:
+Packages Included:
 - metal
 - metal-jsx
 - webpack
@@ -10,6 +10,13 @@ Technologies:
 - sass-loader
 
 ## Customizations
+
+###  Metal Router
+
+Boilerplate with `metal-router` included can be found on this branch:
+https://github.com/thektan/metal-jsx-webpack-boilerplate/tree/metal-router
+
+### Remove `sass-loader`
 
 To remove `sass-loader`, revert commit: [Add sass loader (cd15eda)](https://github.com/thektan/metal-jsx-webpack-boilerplate/commit/cd15eda86aeb14fe1c80b720fca73b406e7af5c4)
 ```
